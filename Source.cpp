@@ -6,7 +6,7 @@ int main()
 	do
 	{
 		char choice;
-		int price, quantity, tax_rate, total = 0, net_total = 0;
+		float price, quantity, tax_rate, total = 0, net_total = 0;
 		do
 		{
 			cout << "\nEnter The Product Price: ";
@@ -23,7 +23,7 @@ int main()
 
 		} while (price < 0 || quantity < 1 || tax_rate < 0);
 
-		for (int i = 0; i <= quantity; i++)
+		for (int i = 1; i <= quantity; i++)
 		{
 			total += price;
 		}
